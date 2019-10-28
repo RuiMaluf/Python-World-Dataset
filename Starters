@@ -9,3 +9,5 @@ world_data[world_data['Cool Name'] == 'Skids & Mudflap']
 #Store and print specific rows
 eastern_europe= world_data[world_data['Cool Name'] == 'Skids & Mudflap']
 eastern_europe.loc[[177,187]]
+# Printing descriptive statistics
+eastern_europe.describe().round(2)
