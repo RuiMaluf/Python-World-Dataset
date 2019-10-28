@@ -1,0 +1,11 @@
+# Importing packages and excel file
+
+import pandas as pd
+import matplotlib as plt
+file= 'world_dataset.xlsx'
+world_data= pd.read_excel(file)
+#Subset
+world_data[world_data['Cool Name'] == 'Skids & Mudflap']
+#Store and print specific rows
+eastern_europe= world_data[world_data['Cool Name'] == 'Skids & Mudflap']
+eastern_europe.loc[[177,187]]
