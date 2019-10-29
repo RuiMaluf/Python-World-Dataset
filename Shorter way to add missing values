@@ -1,0 +1,42 @@
+# Importing packages and excel file
+import pandas as pd
+import matplotlib as plt
+
+file= 'WDIW Dataset.xlsx'
+world_data= pd.read_excel(file)
+
+
+#Subset
+world_data[world_data['Cool Name'] == 'Skids & Mudflap']
+
+#Store and print specific rows
+Nordic= world_data[world_data['Cool Name'] == 'Skids & Mudflap']
+
+# Save subset as balkans2
+Nordic2 =Nordic.loc[[67, 147, 187]]
+
+# 67 is Finland
+#147 is Norway
+#187 is Sweden
+
+
+
+
+# Births attended by skilled health staff (% of total)
+Nordic2.at[67,"Births attended by skilled health staff (% of total)"] = 100
+Nordic2.at[147,"Births attended by skilled health staff (% of total)"] = 99
+Nordic2.at[187,"Births attended by skilled health staff (% of total)"] = 100
+
+#Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)"
+Nordic2.at[67,"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)"] = 1.1
+Nordic2.at[147,"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)"] = 1.0
+Nordic2.at[187,"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)"] = 1.2
+
+#Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)
+Nordic2.at[67,"Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)"] = 24.3
+Nordic2.at[147,"Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)"] = 28.1
+Nordic2.at[187,"Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)"] = 23.9
+
+
+pd.set_option('display.max_columns', 500)
+Nordic2
