@@ -2,6 +2,7 @@
 import pandas as pd
 import matplotlib as plt
 
+
 file= 'WDIW Dataset.xlsx'
 world_data= pd.read_excel(file)
 
@@ -11,14 +12,15 @@ world_data[world_data['Cool Name'] == 'Skids & Mudflap']
 
 #Store and print specific rows
 balkans= world_data[world_data['Cool Name'] == 'Skids & Mudflap']
+balkans2 = balkans.loc[[1,24, 47,76,105,118,133,171,177]]
+balkans2
 
-# Save subset as balkans2
-balkans2 = balkans.loc[[24, 47, 105]]
+
 
 # Create variables for each country and assign numbers to them 
-b = 0 #Bosnia
-c = 1 #Croatia
-k = 2 #Kosovo
+b = 1 #Bosnia
+c = 2 #Croatia
+k = 4 #Kosovo
 
 
 # Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)
