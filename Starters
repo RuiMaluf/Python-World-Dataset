@@ -13,7 +13,7 @@ eastern_europe.loc[[177,187]]
 eastern_europe.describe().round(2)
 ---------------------------------
 #renaming columns in pandas dataframe using dictionary
-balkans_2=balkans_2=balkans_2.rename(columns={"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)" : "ed_doc",
+balkans_2=balkans_2.rename(columns={"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)" : "ed_doc",
                                    "Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)": "ed_bach",
                                    "Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)":"ed_mast",
                                    "Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)":"ed_low",
