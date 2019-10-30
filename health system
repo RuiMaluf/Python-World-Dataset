@@ -1,0 +1,6 @@
+balkans=balkans.rename(columns={"Births attended by skilled health staff (% of total)":"birth_skilled_staff",
+                                  "Fertility rate, total (births per woman)":"fertility",
+                                  "Life expectancy at birth, total (years)":"life_expectancy",
+                                  "Prevalence of HIV, total (% of population ages 15-49)":"prevalence_hiv",
+                                  "Prevalence of undernourishment (% of population)":"prevalence_undernourishment",
+                                  "Prevalence of underweight, weight for age (% of children under 5)":"prevalence_underweight"})
