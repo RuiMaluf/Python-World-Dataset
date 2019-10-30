@@ -1,0 +1,20 @@
+ax = sns.stripplot(x='life_expectancy', y='prevalence_underweight', hue=None, data=balkans_2, order=None, 
+                      hue_order=None, jitter=True, 
+                      dodge=False, orient=None, 
+                      color=None, palette=None, size=10, 
+                      edgecolor="gray", linewidth=0, 
+                      ax=None)
+plt.show()
+
+
+
+
+
+g = sns.pairplot(balkans_2, hue='birth_skilled_staff',hue_order=None, palette=None, 
+                     vars=list(balkans_2.columns[0:-1]), 
+                     x_vars=None, y_vars=None, 
+                     kind="reg", diag_kind="hist", 
+                     height=1.5, aspect=1, 
+                     dropna=True, plot_kws=None, 
+                     diag_kws=None, grid_kws=None)
+plt.show()
