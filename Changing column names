@@ -51,4 +51,4 @@ balkans=balkans.rename(columns={"Educational attainment, Doctoral or equivalent,
                                        "Surface area (sq. km)":"sqkm", "Tax revenue (% of GDP)":"gdp_tax",
                                        "Urban population (% of total population)":"pop_urban",
                                        "Urban population growth (annual %)":"pop_growth_urban",
-                               "Death rate, crude (per 1,000 people)":"death_rate","Fertility rate, total (births per woman":"fertility"})
+                               "Death rate, crude (per 1,000 people)":"death_rate","Fertility rate, total (births per woman)":"fertility"})
